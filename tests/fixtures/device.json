@@ -1,0 +1,32 @@
+{
+  "info": {
+    "deviceKey": "fixture-device",
+    "application": "2.5.2",
+    "image": "v1.3.0",
+    "mdns": "kvm-test.local"
+  },
+  "status": {
+    "power": true,
+    "hdd": false,
+    "hdmi": true,
+    "hdmi_signal": true,
+    "hdmi_idle_timeout": 15,
+    "num_lock": null,
+    "caps_lock": null,
+    "scroll_lock": null
+  },
+  "configuration": {
+    "jiggler": false,
+    "jiggler_mode": "relative",
+    "oled_sleep": null,
+    "usb_network": false,
+    "usb_disk": true,
+    "hid_mode": "normal",
+    "preview": false,
+    "mounted_image": "",
+    "tailscale": "notInstalled",
+    "control_mode": "off",
+    "picoclaw": "not_installed",
+    "download_status": "idle"
+  }
+}

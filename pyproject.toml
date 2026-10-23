@@ -1,0 +1,32 @@
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--strict-markers --disable-socket --allow-unix-socket --allow-hosts=127.0.0.1,::1"
+
+[tool.coverage.run]
+source = ["custom_components.nanokvm"]
+
+[tool.coverage.report]
+fail_under = 95
+show_missing = true
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "ICN"]
+ignore = ["E501", "ASYNC109"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+known-first-party = ["homeassistant", "custom_components", "tests"]
+combine-as-imports = true
+split-on-trailing-comma = false
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+follow_imports = "silent"
+files = ["custom_components/nanokvm"]

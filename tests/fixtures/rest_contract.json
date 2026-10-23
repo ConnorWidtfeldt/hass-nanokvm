@@ -1,0 +1,746 @@
+[
+  {
+    "name": "get_password_status",
+    "method": "GET",
+    "path": "auth/password",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_users",
+    "method": "GET",
+    "path": "auth/users",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_scripts",
+    "method": "GET",
+    "path": "vm/script",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_memory_limit",
+    "method": "GET",
+    "path": "vm/memory/limit",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_ssh",
+    "method": "GET",
+    "path": "vm/ssh",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_swap",
+    "method": "GET",
+    "path": "vm/swap",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_hostname",
+    "method": "GET",
+    "path": "vm/hostname",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_web_title",
+    "method": "GET",
+    "path": "vm/web-title",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_mdns",
+    "method": "GET",
+    "path": "vm/mdns",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_autostart_scripts",
+    "method": "GET",
+    "path": "vm/autostart",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_shortcuts",
+    "method": "GET",
+    "path": "hid/shortcuts",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_leader_key",
+    "method": "GET",
+    "path": "hid/shortcut/leader-key",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_images",
+    "method": "GET",
+    "path": "storage/image",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_cdrom",
+    "method": "GET",
+    "path": "storage/cdrom",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_saved_macs",
+    "method": "GET",
+    "path": "network/wol/mac",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_wifi",
+    "method": "GET",
+    "path": "network/wifi",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_dns",
+    "method": "GET",
+    "path": "network/dns",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_update_server",
+    "method": "GET",
+    "path": "application/update-server",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_mcp_config",
+    "method": "GET",
+    "path": "mcp/config",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_picoclaw_sessions",
+    "method": "GET",
+    "path": "picoclaw/sessions",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_picoclaw_status",
+    "method": "GET",
+    "path": "picoclaw/runtime/status",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_download_enabled",
+    "method": "GET",
+    "path": "download/image/enabled",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_download_status",
+    "method": "GET",
+    "path": "download/image/status",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_input_region",
+    "method": "GET",
+    "path": "vm/input-region",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_tailscale_status",
+    "method": "GET",
+    "path": "extensions/tailscale/status",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_autostart",
+    "method": "GET",
+    "path": "vm/autostart/test.sh",
+    "args": ["test.sh"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "get_picoclaw_session",
+    "method": "GET",
+    "path": "picoclaw/sessions/test-session",
+    "args": ["test-session"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "logout",
+    "method": "POST",
+    "path": "auth/logout",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "regenerate_mcp_key",
+    "method": "POST",
+    "path": "mcp/key/regenerate",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "cancel_image_download",
+    "method": "POST",
+    "path": "download/image/cancel",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "disconnect_wifi",
+    "method": "POST",
+    "path": "network/wifi/disconnect",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "set_memory_limit",
+    "method": "POST",
+    "path": "vm/memory/limit",
+    "args": [true, 64],
+    "kwargs": {},
+    "body": {
+      "enabled": true,
+      "limit": 64
+    }
+  },
+  {
+    "name": "set_swap",
+    "method": "POST",
+    "path": "vm/swap",
+    "args": [128],
+    "kwargs": {},
+    "body": {
+      "size": 128
+    }
+  },
+  {
+    "name": "set_ssh",
+    "method": "POST",
+    "path": "vm/ssh/enable",
+    "args": [true],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "set_mdns",
+    "method": "POST",
+    "path": "vm/mdns/disable",
+    "args": [false],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "set_hostname",
+    "method": "POST",
+    "path": "vm/hostname",
+    "args": ["kvm-fixture"],
+    "kwargs": {},
+    "body": {
+      "hostname": "kvm-fixture"
+    }
+  },
+  {
+    "name": "set_web_title",
+    "method": "POST",
+    "path": "vm/web-title",
+    "args": ["KVM"],
+    "kwargs": {},
+    "body": {
+      "title": "KVM"
+    }
+  },
+  {
+    "name": "set_tls",
+    "method": "POST",
+    "path": "vm/tls",
+    "args": [true],
+    "kwargs": {},
+    "body": {
+      "enabled": true
+    }
+  },
+  {
+    "name": "delete_image",
+    "method": "POST",
+    "path": "storage/image/delete",
+    "args": ["/data/test.iso"],
+    "kwargs": {},
+    "body": {
+      "file": "/data/test.iso"
+    }
+  },
+  {
+    "name": "name_saved_mac",
+    "method": "POST",
+    "path": "network/wol/mac/name",
+    "args": ["00:11:22:33:44:55", "test"],
+    "kwargs": {},
+    "body": {
+      "mac": "00:11:22:33:44:55",
+      "name": "test"
+    }
+  },
+  {
+    "name": "connect_wifi",
+    "method": "POST",
+    "path": "network/wifi/connect",
+    "args": ["fixture", "private"],
+    "kwargs": {},
+    "body": {
+      "ssid": "fixture",
+      "password": "private"
+    }
+  },
+  {
+    "name": "set_dns",
+    "method": "POST",
+    "path": "network/dns",
+    "args": ["manual", ["192.0.2.1"]],
+    "kwargs": {},
+    "body": {
+      "mode": "manual",
+      "servers": ["192.0.2.1"]
+    }
+  },
+  {
+    "name": "set_update_server",
+    "method": "POST",
+    "path": "application/update-server",
+    "args": [false, ""],
+    "kwargs": {},
+    "body": {
+      "enabled": false,
+      "url": ""
+    }
+  },
+  {
+    "name": "add_shortcut",
+    "method": "POST",
+    "path": "hid/shortcut",
+    "args": [
+      [
+        {
+          "code": "KeyA",
+          "label": "A"
+        }
+      ]
+    ],
+    "kwargs": {},
+    "body": {
+      "keys": [
+        {
+          "code": "KeyA",
+          "label": "A"
+        }
+      ]
+    }
+  },
+  {
+    "name": "set_leader_key",
+    "method": "POST",
+    "path": "hid/shortcut/leader-key",
+    "args": ["ControlRight"],
+    "kwargs": {},
+    "body": {
+      "key": "ControlRight"
+    }
+  },
+  {
+    "name": "pause_frame_detection",
+    "method": "POST",
+    "path": "stream/mjpeg/detect/stop",
+    "args": [20],
+    "kwargs": {},
+    "body": {
+      "duration": 20
+    }
+  },
+  {
+    "name": "download_image",
+    "method": "POST",
+    "path": "download/image",
+    "args": ["https://example.invalid/test.iso"],
+    "kwargs": {},
+    "body": {
+      "file": "https://example.invalid/test.iso",
+      "sha256sum": ""
+    }
+  },
+  {
+    "name": "set_picoclaw_model",
+    "method": "POST",
+    "path": "picoclaw/model/config",
+    "args": ["model", "https://example.invalid", "fixture-secret"],
+    "kwargs": {},
+    "body": {
+      "model": "model",
+      "api_base": "https://example.invalid",
+      "api_key": "fixture-secret"
+    }
+  },
+  {
+    "name": "set_picoclaw_profile",
+    "method": "POST",
+    "path": "picoclaw/agent/profile",
+    "args": ["kvm"],
+    "kwargs": {},
+    "body": {
+      "profile": "kvm"
+    }
+  },
+  {
+    "name": "set_autostart",
+    "method": "POST",
+    "path": "vm/autostart/test.sh",
+    "args": ["test.sh", "true"],
+    "kwargs": {},
+    "body": {
+      "content": "true"
+    }
+  },
+  {
+    "name": "run_script",
+    "method": "POST",
+    "path": "vm/script/run",
+    "args": ["test.sh"],
+    "kwargs": {},
+    "body": {
+      "name": "test.sh",
+      "type": "background"
+    }
+  },
+  {
+    "name": "run_script",
+    "method": "POST",
+    "path": "vm/script/run",
+    "args": ["test.py", false],
+    "kwargs": {},
+    "body": {
+      "name": "test.py",
+      "type": "foreground"
+    }
+  },
+  {
+    "name": "wake_on_lan",
+    "method": "POST",
+    "path": "network/wol",
+    "args": ["00:11:22:33:44:55"],
+    "kwargs": {},
+    "body": {
+      "mac": "00:11:22:33:44:55"
+    }
+  },
+  {
+    "name": "reboot",
+    "method": "POST",
+    "path": "vm/system/reboot",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "reset_hid",
+    "method": "POST",
+    "path": "hid/reset",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "reset_hdmi",
+    "method": "POST",
+    "path": "vm/hdmi/reset",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "update_application",
+    "method": "POST",
+    "path": "application/update",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "configure_video",
+    "method": "POST",
+    "path": "vm/screen",
+    "args": ["fps", 30],
+    "kwargs": {},
+    "body": {
+      "type": "fps",
+      "value": 30
+    }
+  },
+  {
+    "name": "set_frame_detection",
+    "method": "POST",
+    "path": "stream/mjpeg/detect",
+    "args": [true],
+    "kwargs": {},
+    "body": {
+      "enabled": true
+    }
+  },
+  {
+    "name": "mount_image",
+    "method": "POST",
+    "path": "storage/image/mount",
+    "args": ["/data/test.iso"],
+    "kwargs": {
+      "cdrom": true
+    },
+    "body": {
+      "file": "/data/test.iso",
+      "cdrom": true
+    }
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "extensions/tailscale/up",
+    "args": ["tailscale", "up"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "picoclaw/runtime/start",
+    "args": ["picoclaw", "start"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "mcp/config",
+    "args": ["mcp", "start"],
+    "kwargs": {},
+    "body": {
+      "enabled": true
+    }
+  },
+  {
+    "name": "set_setting",
+    "method": "POST",
+    "path": "vm/hdmi/enable",
+    "args": ["hdmi", true],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "set_setting",
+    "method": "POST",
+    "path": "application/preview",
+    "args": ["preview", true],
+    "kwargs": {},
+    "body": {
+      "enable": true
+    }
+  },
+  {
+    "name": "set_setting",
+    "method": "POST",
+    "path": "vm/oled",
+    "args": ["oled_sleep", 60],
+    "kwargs": {},
+    "body": {
+      "sleep": 60
+    }
+  },
+  {
+    "name": "set_setting",
+    "method": "POST",
+    "path": "vm/hdmi/timeout",
+    "args": ["hdmi_idle_timeout", 0],
+    "kwargs": {},
+    "body": {
+      "minutes": 0
+    }
+  },
+  {
+    "name": "set_setting",
+    "method": "POST",
+    "path": "hid/mode",
+    "args": ["hid_mode", "normal"],
+    "kwargs": {},
+    "body": {
+      "mode": "normal"
+    }
+  },
+  {
+    "name": "delete_script",
+    "method": "DELETE",
+    "path": "vm/script",
+    "args": ["test.sh"],
+    "kwargs": {},
+    "body": {
+      "name": "test.sh"
+    }
+  },
+  {
+    "name": "delete_autostart",
+    "method": "DELETE",
+    "path": "vm/autostart/test.sh",
+    "args": ["test.sh"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "delete_user",
+    "method": "DELETE",
+    "path": "auth/users/test",
+    "args": ["test"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "delete_saved_mac",
+    "method": "DELETE",
+    "path": "network/wol/mac",
+    "args": ["00:11:22:33:44:55"],
+    "kwargs": {},
+    "body": {
+      "mac": "00:11:22:33:44:55"
+    }
+  },
+  {
+    "name": "delete_shortcut",
+    "method": "DELETE",
+    "path": "hid/shortcut",
+    "args": ["fixture-id"],
+    "kwargs": {},
+    "body": {
+      "id": "fixture-id"
+    }
+  },
+  {
+    "name": "delete_picoclaw_session",
+    "method": "DELETE",
+    "path": "picoclaw/sessions/test-session",
+    "args": ["test-session"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "release_picoclaw_session",
+    "method": "DELETE",
+    "path": "picoclaw/runtime/session",
+    "args": [],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "set_setting",
+    "method": "PUT",
+    "path": "ai/control/mode",
+    "args": ["control_mode", "off"],
+    "kwargs": {},
+    "body": {
+      "mode": "off"
+    }
+  },
+  {
+    "name": "update_user",
+    "method": "PUT",
+    "path": "auth/users/test",
+    "args": ["test"],
+    "kwargs": {
+      "enabled": false,
+      "role": "user"
+    },
+    "body": {
+      "enabled": false,
+      "role": "user"
+    }
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "extensions/tailscale/install",
+    "args": ["tailscale", "install"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "extensions/tailscale/uninstall",
+    "args": ["tailscale", "uninstall"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "extensions/tailscale/login",
+    "args": ["tailscale", "login"],
+    "kwargs": {},
+    "body": null
+  },
+  {
+    "name": "control_extension",
+    "method": "POST",
+    "path": "extensions/tailscale/logout",
+    "args": ["tailscale", "logout"],
+    "kwargs": {},
+    "body": null
+  }
+]
