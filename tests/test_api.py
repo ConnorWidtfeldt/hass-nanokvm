@@ -437,7 +437,8 @@ async def test_mouse_reports(
 
 
 @pytest.mark.parametrize(
-    ("text", "language"), [("", ""), ("a" * 834, ""), ("🙂", ""), ("text", "unknown")]
+    ("text", "language"),
+    [("", ""), ("a" * 834, ""), ("\U0001f642", ""), ("text", "unknown")],
 )
 async def test_invalid_text(client: NanoKvmClient, text: str, language: str) -> None:
     """Do not silently drop unsupported characters or truncate text."""
@@ -446,7 +447,7 @@ async def test_invalid_text(client: NanoKvmClient, text: str, language: str) -> 
 
 
 @pytest.mark.parametrize(
-    ("text", "language"), [("a" * 833, ""), ("ä€", "de"), ("éç", "fr")]
+    ("text", "language"), [("a" * 833, ""), ("\xe4\u20ac", "de"), ("\xe9\xe7", "fr")]
 )
 async def test_paste_layout(
     client: NanoKvmClient, http: AiohttpClientMocker, text: str, language: str

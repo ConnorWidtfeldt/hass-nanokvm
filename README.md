@@ -8,10 +8,10 @@ Requires **Home Assistant 2026.10.2 or newer**. This is a custom integration, no
 
 ### HACS
 
-1. In HACS, open the three-dot menu → **Custom repositories**.
+1. In HACS, open the three-dot menu > **Custom repositories**.
 2. Add `https://github.com/ConnorWidtfeldt/hass-nanokvm` with type **Integration**.
 3. Find **NanoKVM**, download it, and restart Home Assistant.
-4. Open **Settings → Devices & services → Add integration → NanoKVM**.
+4. Open **Settings > Devices & services > Add integration > NanoKVM**.
 
 ### Manual
 
@@ -65,7 +65,7 @@ Download diagnostics from the integration menu when reporting an issue. Diagnost
 
 ## Remove
 
-Delete the integration from **Settings → Devices & services**, then remove its download in HACS or delete `custom_components/nanokvm` and restart Home Assistant. Removal does not change device settings or the remote host.
+Delete the integration from **Settings > Devices & services**, then remove its download in HACS or delete `custom_components/nanokvm` and restart Home Assistant. Removal does not change device settings or the remote host.
 
 ## Development
 

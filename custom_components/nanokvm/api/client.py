@@ -718,7 +718,11 @@ class NanoKvmClient:
         self, text: str, language: Literal["", "de", "fr"] = ""
     ) -> None:
         """Type supported characters using the firmware's keyboard layouts."""
-        extra = {"": "", "de": "äÄöÖüÜß´°§€²³", "fr": "éèçà°¨£µù§€"}
+        extra = {
+            "": "",
+            "de": "\xe4\xc4\xf6\xd6\xfc\xdc\xdf\xb4\xb0\xa7\u20ac\xb2\xb3",
+            "fr": "\xe9\xe8\xe7\xe0\xb0\xa8\xa3\xb5\xf9\xa7\u20ac",
+        }
         if language not in extra or not 1 <= len(text) <= 833:
             raise ValueError("Unsupported keyboard layout or text length")
         if any(
