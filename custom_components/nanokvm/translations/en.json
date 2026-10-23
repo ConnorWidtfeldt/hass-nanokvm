@@ -1,0 +1,491 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "already_in_progress": "This device is already being configured.",
+      "reauth_successful": "Authentication updated.",
+      "reconfigure_successful": "Configuration updated.",
+      "unique_id_mismatch": "This address belongs to a different device.",
+      "unsupported_device": "This hardware is unsupported. Pro models are not supported.",
+      "unsupported_firmware": "Application firmware 2.5.2 or newer is required."
+    },
+    "error": {
+      "cannot_connect": "Failed to connect.",
+      "invalid_auth": "Invalid credentials or expired session.",
+      "invalid_fingerprint": "Enter the certificate SHA-256 fingerprint (64 hexadecimal characters).",
+      "invalid_url": "Enter an HTTP or HTTPS URL without a path or credentials."
+    },
+    "step": {
+      "confirm": {
+        "data": {
+          "allow_preview": "Allow MJPEG preview to use the shared encoder",
+          "fingerprint": "SHA-256 certificate fingerprint",
+          "password": "Password",
+          "url": "Device URL",
+          "username": "Username"
+        },
+        "data_description": {
+          "allow_preview": "Explicit consent for preview to use the device encoder. The camera entity is initially disabled.",
+          "fingerprint": "Optional SHA-256 fingerprint for a trusted self-signed HTTPS certificate.",
+          "password": "Password for the device account.",
+          "url": "HTTP or HTTPS URL, including a custom port if needed.",
+          "username": "Account name configured in the device web interface."
+        },
+        "description": "Enter the device URL and credentials. For self-signed HTTPS, verify the certificate fingerprint independently before entering it. Enabling preview allows MJPEG access to switch the shared encoder and interrupt H.264 viewers.",
+        "title": "Connect"
+      },
+      "reauth_confirm": {
+        "data": {
+          "allow_preview": "Allow MJPEG preview to use the shared encoder",
+          "fingerprint": "SHA-256 certificate fingerprint",
+          "password": "Password",
+          "url": "Device URL",
+          "username": "Username"
+        },
+        "data_description": {
+          "allow_preview": "Explicit consent for preview to use the device encoder. The camera entity is initially disabled.",
+          "fingerprint": "Optional SHA-256 fingerprint for a trusted self-signed HTTPS certificate.",
+          "password": "Password for the device account.",
+          "url": "HTTP or HTTPS URL, including a custom port if needed.",
+          "username": "Account name configured in the device web interface."
+        },
+        "description": "Enter the device URL and credentials. For self-signed HTTPS, verify the certificate fingerprint independently before entering it. Enabling preview allows MJPEG access to switch the shared encoder and interrupt H.264 viewers.",
+        "title": "Connect"
+      },
+      "reconfigure": {
+        "data": {
+          "allow_preview": "Allow MJPEG preview to use the shared encoder",
+          "fingerprint": "SHA-256 certificate fingerprint",
+          "password": "Password",
+          "url": "Device URL",
+          "username": "Username"
+        },
+        "data_description": {
+          "allow_preview": "Explicit consent for preview to use the device encoder. The camera entity is initially disabled.",
+          "fingerprint": "Optional SHA-256 fingerprint for a trusted self-signed HTTPS certificate.",
+          "password": "Password for the device account.",
+          "url": "HTTP or HTTPS URL, including a custom port if needed.",
+          "username": "Account name configured in the device web interface."
+        },
+        "description": "Enter the device URL and credentials. For self-signed HTTPS, verify the certificate fingerprint independently before entering it. Enabling preview allows MJPEG access to switch the shared encoder and interrupt H.264 viewers.",
+        "title": "Connect"
+      },
+      "user": {
+        "data": {
+          "allow_preview": "Allow MJPEG preview to use the shared encoder",
+          "fingerprint": "SHA-256 certificate fingerprint",
+          "password": "Password",
+          "url": "Device URL",
+          "username": "Username"
+        },
+        "data_description": {
+          "allow_preview": "Explicit consent for preview to use the device encoder. The camera entity is initially disabled.",
+          "fingerprint": "Optional SHA-256 fingerprint for a trusted self-signed HTTPS certificate.",
+          "password": "Password for the device account.",
+          "url": "HTTP or HTTPS URL, including a custom port if needed.",
+          "username": "Account name configured in the device web interface."
+        },
+        "description": "Enter the device URL and credentials. For self-signed HTTPS, verify the certificate fingerprint independently before entering it. Enabling preview allows MJPEG access to switch the shared encoder and interrupt H.264 viewers.",
+        "title": "Connect"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "caps_lock": {
+        "name": "Caps lock"
+      },
+      "capture_direct": {
+        "name": "Direct capture"
+      },
+      "capture_h264": {
+        "name": "H.264 capture"
+      },
+      "capture_mjpeg": {
+        "name": "MJPEG capture"
+      },
+      "hdd": {
+        "name": "Disk activity"
+      },
+      "hdmi_signal": {
+        "name": "HDMI signal"
+      },
+      "mcp": {
+        "name": "MCP control"
+      },
+      "mixed_video": {
+        "name": "H.264 viewer conflict"
+      },
+      "num_lock": {
+        "name": "Num lock"
+      },
+      "power": {},
+      "scroll_lock": {
+        "name": "Scroll lock"
+      },
+      "usb_disk": {
+        "name": "Raw data partition sharing"
+      },
+      "usb_network": {
+        "name": "USB network"
+      }
+    },
+    "button": {
+      "force_off": {
+        "name": "Force power off"
+      },
+      "power_button": {
+        "name": "Power button"
+      },
+      "reboot": {
+        "name": "Restart device"
+      },
+      "reset_button": {
+        "name": "Reset button"
+      },
+      "reset_hdmi": {
+        "name": "Reset HDMI"
+      },
+      "reset_hid": {
+        "name": "Reset USB input"
+      }
+    },
+    "camera": {
+      "preview": {
+        "name": "Preview"
+      }
+    },
+    "number": {
+      "hdmi_idle_timeout": {
+        "name": "HDMI idle timeout"
+      },
+      "oled_sleep": {
+        "name": "OLED sleep timeout"
+      }
+    },
+    "select": {
+      "hid_mode": {
+        "name": "USB input mode",
+        "state": {
+          "hid-only": "Input only",
+          "normal": "Normal"
+        }
+      },
+      "jiggler_mode": {
+        "name": "Mouse jiggler mode",
+        "state": {
+          "absolute": "Absolute",
+          "relative": "Relative"
+        }
+      }
+    },
+    "sensor": {
+      "control_mode": {
+        "name": "AI control mode"
+      },
+      "download_status": {
+        "name": "Image download"
+      },
+      "input_resolution": {
+        "name": "Input resolution"
+      },
+      "mounted_image": {
+        "name": "Mounted image"
+      },
+      "picoclaw": {
+        "name": "PicoClaw"
+      },
+      "tailscale": {
+        "name": "Tailscale"
+      }
+    },
+    "switch": {
+      "hdmi": {
+        "name": "HDMI capture"
+      },
+      "jiggler": {
+        "name": "Mouse jiggler"
+      },
+      "preview": {
+        "name": "Preview updates"
+      }
+    },
+    "update": {
+      "application": {
+        "name": "Application"
+      }
+    }
+  },
+  "exceptions": {
+    "command_failed": {
+      "message": "The command failed. Check device state before repeating it."
+    },
+    "identity_mismatch": {
+      "message": "This address belongs to a different device. Reconfigure the integration with the correct address."
+    },
+    "invalid_auth": {
+      "message": "The session expired. Reauthenticate the integration."
+    },
+    "invalid_parameter": {
+      "message": "The supplied value is not supported."
+    },
+    "not_loaded": {
+      "message": "The selected integration is not loaded."
+    },
+    "permission_denied": {
+      "message": "This account does not permit the operation."
+    },
+    "state_update_failed": {
+      "message": "Unable to read device state."
+    },
+    "unsupported_device": {
+      "message": "This hardware is unsupported. Pro models are not supported."
+    },
+    "unsupported_firmware": {
+      "message": "Application firmware 2.5.2 or newer is required."
+    },
+    "update_check_failed": {
+      "message": "Unable to check for updates."
+    },
+    "update_timeout": {
+      "message": "The installed version has not changed. Check the device web interface before attempting another update."
+    },
+    "update_unavailable": {
+      "message": "The requested application update is unavailable."
+    }
+  },
+  "issues": {
+    "unsupported_firmware": {
+      "description": "Install application firmware 2.5.2 or newer using the device web interface, then reload this integration. Controls are disabled until a supported version is detected.",
+      "title": "Firmware is unsupported"
+    }
+  },
+  "services": {
+    "configure_video": {
+      "description": "Set a write-only parameter. Encoding: 0=MJPEG, 1=H.264. FPS: 10\u201360. Resolution: 0, 480, 600, 720, 1080. Quality/bitrate: 50, 60, 80, 100, 1000, 2000, 3000, 5000. GOP: 1\u2013100.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "setting": {
+          "description": "Setting for this operation.",
+          "name": "Setting"
+        },
+        "value": {
+          "description": "Value for this operation.",
+          "name": "Value"
+        }
+      },
+      "name": "Configure video"
+    },
+    "control_extension": {
+      "description": "Control an installed extension.",
+      "fields": {
+        "action": {
+          "description": "Action for this operation.",
+          "name": "Action"
+        },
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "extension": {
+          "description": "Extension for this operation.",
+          "name": "Extension"
+        }
+      },
+      "name": "Control extension"
+    },
+    "mount_image": {
+      "description": "Mount an image stored on the device. An empty filename attaches the raw data partition. It does not safely eject media.",
+      "fields": {
+        "cdrom": {
+          "description": "Present the image as a CD-ROM.",
+          "name": "CD-ROM"
+        },
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "file": {
+          "description": "File for this operation.",
+          "name": "File"
+        }
+      },
+      "name": "Mount image"
+    },
+    "move_pointer": {
+      "description": "Move the pointer on the remote host.",
+      "fields": {
+        "buttons": {
+          "description": "Buttons for this operation.",
+          "name": "Buttons"
+        },
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "relative": {
+          "description": "Relative for this operation.",
+          "name": "Relative"
+        },
+        "wheel": {
+          "description": "Wheel for this operation.",
+          "name": "Wheel"
+        },
+        "x": {
+          "description": "X for this operation.",
+          "name": "X"
+        },
+        "y": {
+          "description": "Y for this operation.",
+          "name": "Y"
+        }
+      },
+      "name": "Move pointer"
+    },
+    "press_button": {
+      "description": "Press an ATX button on the remote host.",
+      "fields": {
+        "button": {
+          "description": "Button for this operation.",
+          "name": "Button"
+        },
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "duration": {
+          "description": "Duration for this operation.",
+          "name": "Duration"
+        }
+      },
+      "name": "Press ATX button"
+    },
+    "run_script": {
+      "description": "Run an existing script on the device.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "name": {
+          "description": "Name for this operation.",
+          "name": "Name"
+        }
+      },
+      "name": "Run existing script"
+    },
+    "send_keys": {
+      "description": "Send a USB keyboard chord to the remote host.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "keys": {
+          "description": "Keys for this operation.",
+          "name": "Keys"
+        },
+        "modifiers": {
+          "description": "Modifiers for this operation.",
+          "name": "Modifiers"
+        }
+      },
+      "name": "Send USB keyboard chord"
+    },
+    "send_text": {
+      "description": "Type up to 833 supported characters using the selected keyboard layout.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "language": {
+          "description": "Empty for US, de for German, fr for French.",
+          "name": "Keyboard layout"
+        },
+        "text": {
+          "description": "Text for this operation.",
+          "name": "Text"
+        }
+      },
+      "name": "Type text"
+    },
+    "set_control_mode": {
+      "description": "Select the control owner. This may stop another extension or release its input session.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "mode": {
+          "description": "Off, MCP or PicoClaw.",
+          "name": "Control mode"
+        }
+      },
+      "name": "Set AI control mode"
+    },
+    "set_frame_detection": {
+      "description": "Enable or disable frame-change detection.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "enabled": {
+          "description": "Enabled for this operation.",
+          "name": "Enabled"
+        }
+      },
+      "name": "Set frame detection"
+    },
+    "set_input_region": {
+      "description": "Update input-region settings while retaining omitted fields.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "region": {
+          "description": "Firmware input-region object. See integration documentation for fields and bounds.",
+          "name": "Region"
+        }
+      },
+      "name": "Set input region"
+    },
+    "set_usb_device": {
+      "description": "Enable or disable a USB gadget.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "device": {
+          "description": "Device for this operation.",
+          "name": "USB gadget"
+        },
+        "enabled": {
+          "description": "Enabled for this operation.",
+          "name": "Enabled"
+        }
+      },
+      "name": "Set USB gadget"
+    },
+    "wake_on_lan": {
+      "description": "Send a Wake-on-LAN packet from the device.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The configured device.",
+          "name": "Device"
+        },
+        "mac": {
+          "description": "MAC address of the computer to wake.",
+          "name": "MAC address"
+        }
+      },
+      "name": "Send Wake-on-LAN packet"
+    }
+  }
+}

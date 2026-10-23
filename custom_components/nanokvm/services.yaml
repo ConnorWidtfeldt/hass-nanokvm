@@ -1,0 +1,230 @@
+press_button:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    button:
+      selector:
+        select:
+          options:
+            - power
+            - reset
+      required: true
+    duration:
+      selector:
+        number:
+          min: 1
+          max: 10000
+          mode: box
+send_text:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    text:
+      selector:
+        text: null
+      required: true
+    language:
+      selector:
+        select:
+          options:
+            - ""
+            - de
+            - fr
+send_keys:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    keys:
+      selector:
+        object: null
+      required: true
+    modifiers:
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+move_pointer:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    x:
+      selector:
+        number:
+          min: -127
+          max: 32767
+          mode: box
+      required: true
+    y:
+      selector:
+        number:
+          min: -127
+          max: 32767
+          mode: box
+      required: true
+    relative:
+      selector:
+        boolean: null
+    buttons:
+      selector:
+        number:
+          min: 0
+          max: 31
+          mode: box
+    wheel:
+      selector:
+        number:
+          min: -127
+          max: 127
+          mode: box
+set_usb_device:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    device:
+      selector:
+        select:
+          options:
+            - network
+            - disk
+      required: true
+    enabled:
+      selector:
+        boolean: null
+      required: true
+mount_image:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    file:
+      selector:
+        text: null
+    cdrom:
+      selector:
+        boolean: null
+configure_video:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    setting:
+      selector:
+        select:
+          options:
+            - type
+            - fps
+            - quality
+            - resolution
+            - gop
+      required: true
+    value:
+      selector:
+        number:
+          min: 0
+          max: 5000
+          mode: box
+      required: true
+set_frame_detection:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    enabled:
+      selector:
+        boolean: null
+      required: true
+run_script:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    name:
+      selector:
+        text: null
+      required: true
+wake_on_lan:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    mac:
+      selector:
+        text: null
+      required: true
+control_extension:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    extension:
+      selector:
+        select:
+          options:
+            - tailscale
+            - picoclaw
+            - mcp
+      required: true
+    action:
+      selector:
+        select:
+          options:
+            - start
+            - stop
+            - restart
+            - up
+            - down
+      required: true
+set_input_region:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    region:
+      required: true
+      selector:
+        object: null
+set_control_mode:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: nanokvm
+    mode:
+      required: true
+      selector:
+        select:
+          options:
+            - "off"
+            - mcp
+            - picoclaw

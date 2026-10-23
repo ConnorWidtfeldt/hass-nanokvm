@@ -1,0 +1,147 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "caps_lock": {
+        "default": "mdi:apple-keyboard-caps"
+      },
+      "capture_direct": {
+        "default": "mdi:video"
+      },
+      "capture_h264": {
+        "default": "mdi:video"
+      },
+      "capture_mjpeg": {
+        "default": "mdi:video"
+      },
+      "hdd": {
+        "default": "mdi:harddisk"
+      },
+      "mcp": {
+        "default": "mdi:robot"
+      },
+      "mixed_video": {
+        "default": "mdi:alert"
+      },
+      "num_lock": {
+        "default": "mdi:numeric"
+      },
+      "scroll_lock": {
+        "default": "mdi:arrow-up-down"
+      },
+      "usb_disk": {
+        "default": "mdi:harddisk"
+      },
+      "usb_network": {
+        "default": "mdi:usb"
+      }
+    },
+    "button": {
+      "force_off": {
+        "default": "mdi:power-off"
+      },
+      "power_button": {
+        "default": "mdi:power"
+      },
+      "reboot": {
+        "default": "mdi:restart"
+      },
+      "reset_button": {
+        "default": "mdi:restart"
+      },
+      "reset_hdmi": {
+        "default": "mdi:video"
+      },
+      "reset_hid": {
+        "default": "mdi:keyboard"
+      }
+    },
+    "number": {
+      "hdmi_idle_timeout": {
+        "default": "mdi:timer-outline"
+      },
+      "oled_sleep": {
+        "default": "mdi:timer-outline"
+      }
+    },
+    "select": {
+      "hid_mode": {
+        "default": "mdi:keyboard"
+      },
+      "jiggler_mode": {
+        "default": "mdi:mouse"
+      }
+    },
+    "sensor": {
+      "control_mode": {
+        "default": "mdi:robot"
+      },
+      "download_status": {
+        "default": "mdi:download"
+      },
+      "input_resolution": {
+        "default": "mdi:monitor-screenshot"
+      },
+      "mounted_image": {
+        "default": "mdi:disc"
+      },
+      "picoclaw": {
+        "default": "mdi:robot"
+      },
+      "tailscale": {
+        "default": "mdi:vpn"
+      }
+    },
+    "switch": {
+      "hdmi": {
+        "default": "mdi:video-input-hdmi"
+      },
+      "jiggler": {
+        "default": "mdi:mouse"
+      },
+      "preview": {
+        "default": "mdi:flask"
+      }
+    }
+  },
+  "services": {
+    "configure_video": {
+      "service": "mdi:video"
+    },
+    "control_extension": {
+      "service": "mdi:robot"
+    },
+    "mount_image": {
+      "service": "mdi:disc"
+    },
+    "move_pointer": {
+      "service": "mdi:mouse"
+    },
+    "press_button": {
+      "service": "mdi:power"
+    },
+    "run_script": {
+      "service": "mdi:script-text"
+    },
+    "send_keys": {
+      "service": "mdi:keyboard"
+    },
+    "send_text": {
+      "service": "mdi:keyboard"
+    },
+    "set_control_mode": {
+      "service": "mdi:robot"
+    },
+    "set_frame_detection": {
+      "service": "mdi:video"
+    },
+    "set_input_region": {
+      "service": "mdi:crop"
+    },
+    "set_usb_device": {
+      "service": "mdi:usb"
+    },
+    "wake_on_lan": {
+      "service": "mdi:lan-connect"
+    }
+  }
+}
